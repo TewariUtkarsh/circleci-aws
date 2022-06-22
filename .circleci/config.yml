@@ -5,7 +5,6 @@ workflows:
   build_and_push_image:
     jobs:
       - aws-ecr/build-and-push-image:
-          aws_secret_access_key: AWS_SECRET_ACCESS_KEY
           aws-cli-version: latest
           dockerfile: Dockerfile
           executor: aws-ecr/default
